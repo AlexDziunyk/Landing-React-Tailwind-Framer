@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='max-w-[100vw] w-[100vw] relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] flex justify-between items-start sm:items-center py-6 px-8'>
+        <motion.div transition={{y:{duration: 0.4}}} viewport={{once: true}} initial={{y: -100}} animate={{y: 0}}  className='max-w-[100vw] w-[100vw] relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] flex justify-between items-start sm:items-center py-6 px-8'>
             <img src={logo} alt='logo'></img>
             <div className='hidden sm:flex gap-6 text-[1rem] leading-[19px] font-[500]'>
                 <p>Link 1</p>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 </motion.div>}
             
             {isOpen && 
-                <motion.div transition={{duration: 0.3}} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} 
+                <motion.div transition={{duration: 0.5}} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} 
                     className='sm:hidden flex flex-col gap-2 items-center text-[16px] leading-[19px] font-[500]'>
                 <RxCross2 onClick={onClickOpen} size={30}/>
                 <p>Link 1</p>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <p>Link 5</p>
                 <Button standart></Button>
             </motion.div>}
-        </div>
+        </motion.div>
     )
 }
 

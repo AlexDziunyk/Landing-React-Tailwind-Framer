@@ -1,8 +1,8 @@
 {
-  "name": "Landing-React-Tailwind-Framer",
+  "name": "animation-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexdziunyk.github.io/Landing-React-Tailwind-Framer",
+  "homepage": "https://alexdziunyk.github.io/animation-project",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
